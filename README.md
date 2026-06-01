@@ -8,32 +8,32 @@ Users can sign up, attempt mock interviews for different roles and difficulty le
 
 ## 🔗 Live Demo & Repo Links
 
-- 🌐 Live App: [https://mockinterview-pro.vercel.app](https://mockinterview-pro.vercel.app) <!-- apna URL daalo -->
-- 📡 Backend API: [https://mockinterview-pro-api.onrender.com](https://mockinterview-pro-api.onrender.com) <!-- optional -->
-- 💻 GitHub: [https://github.com/your-username/mockinterview-pro](https://github.com/your-username/mockinterview-pro) <!-- apna repo -->
+- 🌐 Live App: [https://mock-interview-2n2h1puje-developer-vishal-webs-projects.vercel.app](https://mock-interview-2n2h1puje-developer-vishal-webs-projects.vercel.app)
+- 📡 Backend API: [https://mockinterview-pro.onrender.com](https://mockinterview-pro.onrender.com)
+- 💻 GitHub: [https://github.com/developer-vishal-web/MockInterview-Pro](https://github.com/developer-vishal-web/MockInterview-Pro)
 
 ---
 
 ## 🖼 Screenshots
 
-> Paths/URLs ko apne project ke hisaab se change kar lo (e.g. `/screenshots/...png` ya GitHub raw URL).
+> Place these images in a `screenshots` folder in the project root (e.g. `./screenshots/login.png`).
 
 **Login & Signup**
 
-![Login Page](./screenshots/login.png)  
-![Signup Page](./screenshots/signup.png)
+![Login Page](./frontend/public/screenshots/login.png)  
+![Signup Page](./frontend/public/screenshots/signup.png)
 
 **Dashboard (Analytics)**
 
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](./frontend/public/screenshots/dashboard.png)
 
 **Interview Page**
 
-![Interview](./screenshots/interview.png)
+![Interview](./frontend/public/screenshots/interview.png)
 
 **Result Page**
 
-![Result](./screenshots/result.png)
+![Result](./frontend/public/screenshots/result.png)
 
 ---
 
@@ -97,6 +97,13 @@ backend/
     Attempt.js
   middleware/
     authMiddleware.js
+
+screenshots/
+  login.png
+  signup.png
+  dashboard.png
+  interview.png
+  result.png
 ```
 
 *(Folder names can be adjusted to your exact structure.)*
@@ -108,8 +115,8 @@ backend/
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
-cd <your-repo-folder>
+git clone https://github.com/developer-vishal-web/MockInterview-Pro.git
+cd MockInterview-Pro
 ```
 
 ### 2. Backend setup
@@ -146,7 +153,7 @@ MongoDB connected
 ### 3. Frontend setup
 
 ```bash
-cd frontend
+cd ../frontend
 npm install
 ```
 
@@ -248,29 +255,34 @@ Open the URL shown in the terminal (usually `http://localhost:5173`).
 
 - **Frontend**: Vercel (build command: `npm run build`, output dir: `dist`)  
 - **Backend**: Render / Railway / Cyclic (start command: `node server.js`)  
-- **Database**: MongoDB Atlas (replace local `MONGO_URI` with Atlas connection string) [web:296]
+- **Database**: MongoDB Atlas (replace local `MONGO_URI` with Atlas connection string)
 
-Make sure to update:
+When deploying:
 
-- `VITE_API_URL` in frontend `.env` to your deployed backend URL (e.g. `https://mockinterview-pro-api.onrender.com/api`).  
-- CORS settings in backend to allow your frontend domain.
+- Set `VITE_API_URL` in frontend environment variables to your deployed backend URL, for example:  
+
+  ```env
+  VITE_API_URL=https://mockinterview-pro.onrender.com/api
+  ```
+
+- Update CORS settings in the backend to allow your frontend domain.
 
 ---
 
 ## ✅ Future Improvements
 
-- Add user profile page with avatar and more stats
-- Add more roles & question categories (DSA, System Design, CS fundamentals)
-- Add timer per question or total interview duration
-- Add admin panel to manage questions and view global stats
-- Integrate AI/LLM to auto‑evaluate answers instead of simple keyword checks [web:295]
+- Add user profile page with avatar and more stats  
+- Add more roles & question categories (DSA, System Design, CS fundamentals)  
+- Add timer per question or total interview duration  
+- Add admin panel to manage questions and view global stats  
+- Integrate AI/LLM to auto‑evaluate answers instead of simple keyword checks  
 - Add export/share feature for results (PDF or shareable link)
 
 ---
 
 ## ✍️ Author
 
-- **Your Name** – [@your-github](https://github.com/your-username)  
+- **Vishal** – [@developer-vishal-web](https://github.com/developer-vishal-web)  
 - Open to feedback, issues, and pull requests.
 
 ---
