@@ -8,15 +8,13 @@ Users can sign up, attempt mock interviews for different roles and difficulty le
 
 ## 🔗 Live Demo & Repo Links
 
-- 🌐 Live App: [https://mock-interview-2n2h1puje-developer-vishal-webs-projects.vercel.app](https://mock-interview-2n2h1puje-developer-vishal-webs-projects.vercel.app)
+- 🌐 Live App: [https://mock-interview-pro.vercel.app](https://mock-interview-pro.vercel.app)
 - 📡 Backend API: [https://mockinterview-pro.onrender.com](https://mockinterview-pro.onrender.com)
 - 💻 GitHub: [https://github.com/developer-vishal-web/MockInterview-Pro](https://github.com/developer-vishal-web/MockInterview-Pro)
 
 ---
 
 ## 🖼 Screenshots
-
-> Place these images in a `screenshots` folder in the project root (e.g. `./screenshots/login.png`).
 
 **Login & Signup**
 
@@ -105,8 +103,6 @@ screenshots/
   interview.png
   result.png
 ```
-
-*(Folder names can be adjusted to your exact structure.)*
 
 ---
 
